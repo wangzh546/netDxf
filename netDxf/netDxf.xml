@@ -4948,6 +4948,11 @@
             has been set to OverDimLineWithoutLeader.
             </remarks>
         </member>
+        <member name="P:netDxf.Entities.Dimension.OffsetPoint">
+            <summary>
+            偏移点
+            </summary>
+        </member>
         <member name="P:netDxf.Entities.Dimension.Style">
             <summary>
             Gets or sets the style associated with the dimension.

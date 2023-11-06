@@ -3442,7 +3442,9 @@ namespace netDxf.IO
             this.chunk.Write(11, dim.TextReferencePoint.X);
             this.chunk.Write(21, dim.TextReferencePoint.Y);
             this.chunk.Write(31, dim.Elevation);
-
+            this.chunk.Write(12, dim.OffsetPoint.X);
+            this.chunk.Write(22, dim.OffsetPoint.Y);
+            this.chunk.Write(32, dim.OffsetPoint.Z);
             DimensionTypeFlags flags = (DimensionTypeFlags) dim.DimensionType;
             flags |= DimensionTypeFlags.BlockReference;
             if (dim.TextPositionManuallySet)

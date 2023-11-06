@@ -101,6 +101,7 @@ namespace netDxf.Entities
 
         protected Vector2 defPoint;
         protected Vector2 textRefPoint;
+        protected Vector3 offsetPoint;
         private DimensionStyle style;
         private readonly DimensionType dimensionType;
         private MTextAttachmentPoint attachmentPoint;
@@ -185,7 +186,18 @@ namespace netDxf.Entities
                 this.textRefPoint = value;
             }
         }
+        /// <summary>
+        /// Æ«ÒÆµã
+        /// </summary>
+        public Vector3 OffsetPoint
+        {
+            get { return this.offsetPoint; }
+            set
+            {
 
+                this.offsetPoint = value;
+            }
+        }
         /// <summary>
         /// Gets or sets the style associated with the dimension.
         /// </summary>
